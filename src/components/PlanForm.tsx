@@ -12,7 +12,7 @@ const PlanForm = () => {
       <div className="mt-6">
           <h2 className="text-MarineBlue font-bold text-3xl mb-1">Select your plan</h2>
           <p className="text-CoolGray font-[500]">You have the option of monthly or yearly billing.</p>
-          <div className="mt-11">
+          <div className="mt-10">
               <div className="flex flex-col gap-4 md:flex-row">
                   
                   {formPlan.map((plan) => {

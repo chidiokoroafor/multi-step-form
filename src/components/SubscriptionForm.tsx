@@ -10,6 +10,7 @@ import { schemas } from '../utils/validation';
 import { allSteps } from '../utils/data';
 import { FormContext } from '../utils/FormContext';
 import ThankYou from './ThankYou';
+import { toast } from 'sonner';
 
 const SubscriptionForm = () => {
     const [formSteps, ] = useState(allSteps)
@@ -63,8 +64,8 @@ const SubscriptionForm = () => {
                                 if (!isLastStep) return next()
                                 setHasSubmitted(true)
                                 setTimeout(() => {
-                                
-                                    alert(JSON.stringify(values, null, 2));
+                                toast.success("Message sent successfully!")
+                                    console.log(JSON.stringify(values, null, 2));
                                     setSubmitting(false);
                                 }, 400);
                             
