@@ -25,6 +25,10 @@ export default {
       },
       fontFamily: {
         Ubuntu: ["Ubuntu", "sans-serif"]
+      },
+      backgroundImage: {
+        'desktop': "url('/images/bg-sidebar-desktop.svg')",
+        'mobile': "url('/images/bg-sidebar-mobile.svg')",
       }
     },
   },

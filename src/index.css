@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .plan-input{
+       position: absolute;
+        opacity: 0;
+        /* display: none; */
+ 
+    }
+    .plan-input:checked + .plan-label{
+        border: 2px solid green;
+    }
+}
