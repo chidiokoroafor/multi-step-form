@@ -3,7 +3,7 @@ import AddOns from "./AddOns"
 import { allAddons } from "../utils/data"
 
 const AddOnsForm = () => {
-    const [addOns, setAddOns] = useState(allAddons)
+    const [addOns, ] = useState(allAddons)
 
   return (
       <div className="mt-6">

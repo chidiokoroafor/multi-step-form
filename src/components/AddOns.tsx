@@ -3,7 +3,7 @@ import { useFormContext } from "../utils/FormContext";
 
 const AddOns = ({ ...props }) => {
     const formData = useFormContext();
-     const [field, meta] = useField({...props, name:props.name, type:'checkbox'})
+     const [field, ] = useField({...props, name:props.name, type:'checkbox'})
   return (
       <div>
           <label className={`${field.checked?'bg-Magnolia border-PurplishBlue ':""} border-2 hover:border-PurplishBlue cursor-pointer border-CoolGray flex justify-between items-center p-2 md:p-4 rounded-lg`} htmlFor={props.id || props.addonName}>
