@@ -29,10 +29,10 @@ const FinishingUp = () => {
       <div className="mt-6">
           <h2 className="text-MarineBlue font-bold text-3xl mb-1">Finishing up</h2>
           <p className="text-CoolGray font-[500]">Double-check everything looks OK before confirming.</p>
-          <div className="mt-11 " >
+          <div className="mt-9 " >
               <div className="bg-Magnolia rounded-lg p-4">
                   
-                  <div className="flex justify-between items-center py-4">
+                  <div className="flex justify-between items-center py-3">
                       <div >
                           <h4 className="text-MarineBlue font-bold">{formData.plan} ({formData.yearly?'Yearly':'Monthly'})</h4>
                           <p className="text-CoolGray underline">Change</p>
@@ -44,7 +44,7 @@ const FinishingUp = () => {
 
                   <div>
                       {cAdons.map((ad) => {
-                          return <div className="flex justify-between py-3">
+                          return <div className="flex justify-between py-2">
                               <p className="text-CoolGray">{ad.name }</p>
                               <p className="text-MarineBlue">+${formData.yearly?`${ad.yAmount}/yr`:`${ad.mAmount}/mo`}</p>
                           </div>
