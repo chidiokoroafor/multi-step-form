@@ -2,7 +2,7 @@ import {  useField } from "formik"
 
 const Plan = ({ ...props }) => {
   
-  const [field, meta] = useField({...props, name:"plan", type:'radio'})
+  const [field,] = useField({...props, name:"plan", type:'radio'})
   return (
     <div className="flex w-full md:w-1/3">
       <input {...field} {...props} className="cursor-pointer plan-input border-2" id={props.planName}  type="radio" />

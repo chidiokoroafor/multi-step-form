@@ -6,24 +6,7 @@ import { allPlans } from "../utils/data"
 
 
 const PlanForm = () => {
-    const [planDuration, setPlanDuration] = useState("monthly")
-    const [formPlan, setFormPlan] = useState(allPlans)
-
-    function handleClick(data) {
-        setFormPlan(prev => {
-            return prev.map((pr) => {
-
-                if (pr.name === data?.name) {
-                    pr.checked = true
-                } else {
-                    pr.checked = false
-                }
-                 
-                return pr
-            })
-        })
-    }
-
+    const [formPlan, ] = useState(allPlans)
     
   return (
       <div className="mt-6">
@@ -33,9 +16,8 @@ const PlanForm = () => {
               <div className="flex flex-col gap-4 md:flex-row">
                   
                   {formPlan.map((plan) => {
-                      plan.duration = planDuration
                       return (
-                            <Plan key={plan.name} planName={plan.name} value={plan.name} mAmount={plan.mAmount} yAmount={plan.yAmount} duration={plan.duration} yearDiscount={plan.yearDiscount} icon={plan.icon} checked={plan.checked} onClick={()=>handleClick(plan)} />
+                            <Plan key={plan.name} planName={plan.name} value={plan.name} mAmount={plan.mAmount} yAmount={plan.yAmount} duration={plan.duration} yearDiscount={plan.yearDiscount} icon={plan.icon} checked={plan.checked}  />
                         )
                     })}
 

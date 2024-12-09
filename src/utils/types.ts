@@ -17,6 +17,14 @@ export type TformData= {
 export type TaddOns = {
     name: string
     description: string
-    amount: string
+    mAmount: string
+    yAmount: string
     selected: boolean
+}
+
+export type TextInputProp = {
+    label: string,
+    name: string,
+    type: string,
+    placeholder: string
 }

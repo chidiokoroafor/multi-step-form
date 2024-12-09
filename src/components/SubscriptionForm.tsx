@@ -1,4 +1,4 @@
-import { Formik, Form, useField } from 'formik';
+import { Formik, Form } from 'formik';
 import { useMultiStepForm } from '../useMultiStepForm';
 import PersonalInfoForm from './PersonalInfoForm';
 import PlanForm from './PlanForm';
@@ -12,7 +12,7 @@ import { FormContext } from '../utils/FormContext';
 import ThankYou from './ThankYou';
 
 const SubscriptionForm = () => {
-    const [formSteps, setFormSteps] = useState(allSteps)
+    const [formSteps, ] = useState(allSteps)
     const [hasSubmitted, setHasSubmitted] = useState(false)
 
     const [formData, setFormData] = useState({
