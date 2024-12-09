@@ -56,11 +56,9 @@ const SubscriptionForm = () => {
                             initialValues={formData}
                             validationSchema={schemas[currentStepIndex]}
                             onSubmit={(values, { setSubmitting }) => {
-                                console.log("values==>", values);
                                 setFormData(prev => {
                                     return { ...prev, ...values }
                                 })
-                                console.log("form-data:::", formData);
                             
                                 if (!isLastStep) return next()
                                 setHasSubmitted(true)
@@ -77,7 +75,7 @@ const SubscriptionForm = () => {
                                 
                                 {step}
                                 
-                                <div className={`flex mt-24 ${isFirstStep ? 'justify-end' : 'justify-between'}  gap-2`}>
+                                <div className={`flex mt-20 ${isFirstStep ? 'justify-end' : 'justify-between'}  gap-2`}>
                                     {(!isFirstStep && !hasSubmitted) && <button type="button" className=" text-CoolGray hover:text-MarineBlue py-1 px-2 rounded-md" onClick={back}>Go Back</button>}
                                     
                                     {!hasSubmitted && <button type="submit" className={`py-2 ${isLastStep ? 'bg-PurplishBlue' : 'bg-MarineBlue'} bg-MarineBlue text-White px-4 rounded-lg `} >
