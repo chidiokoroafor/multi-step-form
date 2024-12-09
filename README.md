@@ -20,8 +20,8 @@ Users should be able to:
   
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution ](https://www.frontendmentor.io/solutions/multi-step-form-with-react-typescript-tailwind-css-UOmNgWdLaW)
+- Live Site URL: [Live site](https://multi-step-form-lovat-kappa.vercel.app/)
 
 ## My process
 
