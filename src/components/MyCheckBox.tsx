@@ -2,7 +2,7 @@ import { useField } from "formik"
 
 const MyCheckBox = ({ ...props }) => {
     
-    const [field, meta] = useField({...props, name:props.name, type:'checkbox'})
+    const [field, ] = useField({...props, name:props.name, type:'checkbox'})
   return (
       <div className="bg-Magnolia rounded bg-P mt-14 flex justify-center py-3">
                   
