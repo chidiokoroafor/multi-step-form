@@ -4,7 +4,7 @@ const MyCheckBox = ({ ...props }) => {
     
     const [field, ] = useField({...props, name:props.name, type:'checkbox'})
   return (
-      <div className="bg-Magnolia rounded bg-P mt-14 flex justify-center py-3">
+      <div className="bg-Magnolia rounded bg-P mt-12 flex justify-center py-3">
                   
         <label className="inline-flex items-center cursor-pointer">
             <span className="me-3 text-sm font-bold text-MarineBlue">Monthly</span>
