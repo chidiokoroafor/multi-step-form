@@ -4,7 +4,7 @@ const PersonalInfoForm = () => {
     
   return (
       <div className="mt-2">
-          <h2 className="text-MarineBlue font-bold text-3xl mb-1">Personal info</h2>
+          <h2 className="text-MarineBlue font-bold text-2xl md:text-3xl mb-1">Personal info</h2>
           <p className="text-CoolGray">Please provide your name, email address, and phone number.</p>
           <div className="mt-6 space-y-8">
               <MyTextInput

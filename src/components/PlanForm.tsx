@@ -10,10 +10,10 @@ const PlanForm = () => {
     
   return (
       <div className="mt-2">
-          <h2 className="text-MarineBlue font-bold text-2xl mb-1">Select your plan</h2>
+          <h2 className="text-MarineBlue font-bold text-2xl md:text-3xl mb-1">Select your plan</h2>
           <p className="text-CoolGray font-[500]">You have the option of monthly or yearly billing.</p>
           <div className="mt-10">
-              <div className="flex flex-col gap-4 md:flex-row">
+              <div className="flex flex-col gap-2 md:gap-4 md:flex-row">
                   
                   {formPlan.map((plan) => {
                       return (

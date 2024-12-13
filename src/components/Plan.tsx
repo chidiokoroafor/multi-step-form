@@ -6,7 +6,7 @@ const Plan = ({ ...props }) => {
   return (
     <div className="flex w-full md:w-1/3">
       <input {...field} {...props} className="cursor-pointer plan-input border-2" id={props.planName}  type="radio" />
-      <label className={`${field.checked?'bg-Magnolia border-PurplishBlue ':""} w-full md:h-52 rounded-lg border-2 p-4 plan-label hover:border-PurplishBlue  flex flex-row gap-5 items-center md:items-start border-CoolGray md:flex-col md:justify-betweeen space-y-6`} htmlFor={props.id || props.planName}>
+      <label className={`${field.checked?'bg-Magnolia border-PurplishBlue ':""} w-full md:h-52 rounded-lg border-2 p-2 md:p-4 plan-label hover:border-PurplishBlue  flex flex-row gap-5 items-center md:items-start border-CoolGray md:flex-col md:justify-betweeen md:space-y-6`} htmlFor={props.id || props.planName}>
       
             <img src={props.icon} className="block size-12" alt="arcade icon" />
             <div className="mt-auto  border-rd-500">

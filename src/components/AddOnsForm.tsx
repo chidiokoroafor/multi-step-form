@@ -7,7 +7,7 @@ const AddOnsForm = () => {
 
   return (
       <div className="mt-6">
-          <h2 className="text-MarineBlue font-bold text-3xl mb-1">Pick add-ons</h2>
+          <h2 className="text-MarineBlue font-bold text-2xl md:text-3xl mb-1">Pick add-ons</h2>
           <p className="text-CoolGray font-[500]">Add-ons help enhance your gaming experience.</p>
           <div className="mt-11 " >
               <div className="space-y-4">
