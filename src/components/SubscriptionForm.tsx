@@ -34,7 +34,7 @@ const SubscriptionForm = () => {
     
     return (
        <FormContext.Provider value={formData} >
-         <div className="max-w-[925px] w-[95%] md:h-[80vh] bg-Magnolia pb-6 md:bg-White text-[16px] rounded-xl p-0 md:p-4 flex flex-col md:items-cente md:flex-row font-Ubuntu">
+         <div className="max-w-[975px] w-[95%] md:h-[75vh] bg-Magnolia pb-6 md:bg-White text-[16px] rounded-xl p-0 md:p-4 flex flex-col md:items-cente md:flex-row font-Ubuntu">
         
             <div className="w-full h-72  md:w-[30%] bg-mobile md:bg-desktop bg-no-repeat bg-cover bg-center md:h-full rounded-lg">
                 <div className="mt-8 space-y-4 mx-auto flex flex-row justify-center items-baseline md:flex-col gap-3 text-white w-[50%] border-red-500">
