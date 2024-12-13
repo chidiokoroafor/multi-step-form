@@ -34,9 +34,9 @@ const SubscriptionForm = () => {
     
     return (
        <FormContext.Provider value={formData} >
-         <div className="max-w-[950px] w-[95%] md:h-[65vh] bg-Magnolia pb-6 md:bg-White text-[16px] rounded-xl p-0 md:p-4 flex flex-col md:items-cente md:flex-row font-Ubuntu">
+         <div className="max-w-[1050px] w-[95%] md:h-[80vh] bg-Magnolia pb-6 md:bg-White text-[16px] rounded-xl p-0 md:p-4 flex flex-col md:items-cente md:flex-row font-Ubuntu">
         
-            <div className="w-full h-72  md:w-1/3 bg-mobile md:bg-desktop bg-no-repeat bg-cover bg-center md:h-full rounded-lg">
+            <div className="w-full h-72  md:w-1/4 bg-mobile md:bg-desktop bg-no-repeat bg-cover bg-center md:h-full rounded-lg">
                 <div className="mt-8 space-y-4 mx-auto flex flex-row justify-center items-baseline md:flex-col gap-3 text-white w-[50%] border-red-500">
                 {formSteps.map((stp,i) => {
                 return (
@@ -46,9 +46,9 @@ const SubscriptionForm = () => {
                 </div>
             </div>
 
-            <div  className="w-[95%] mx-auto md:h-auto  md:mx-0 md:w-2/3 py-4 px-12 md:mt-0 -mt-32 rounded-lg bg-White">
+            <div  className="w-[95%] mx-auto md:h-auto    md:mx-0 md:w-3/4 py-4 px-4 md:px-24 md:mt-0 -mt-32 rounded-lg bg-White">
             
-            <div className="mb-auto"></div>
+            {/* <div className="mb-auto"></div> */}
 
                     
                 {/* start */}
@@ -76,7 +76,7 @@ const SubscriptionForm = () => {
                                 
                                 {step}
                                 
-                                <div className={`flex mt-20 ${isFirstStep ? 'justify-end' : 'justify-between'}  gap-2`}>
+                                <div className={`flex mt-14 ${isFirstStep ? 'justify-end' : 'justify-between'}  gap-2`}>
                                     {(!isFirstStep && !hasSubmitted) && <button type="button" className=" text-CoolGray hover:text-MarineBlue py-1 px-2 rounded-md" onClick={back}>Go Back</button>}
                                     
                                     {!hasSubmitted && <button type="submit" className={`py-2 ${isLastStep ? 'bg-PurplishBlue' : 'bg-MarineBlue'} bg-MarineBlue text-White px-4 rounded-lg `} >
